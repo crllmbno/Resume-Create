@@ -34,8 +34,12 @@
             this.tmr = new System.Windows.Forms.Timer(this.components);
             this.NameBox = new System.Windows.Forms.TextBox();
             this.lbl2 = new System.Windows.Forms.Label();
-            this.lbl3 = new System.Windows.Forms.Label();
+            this.lbl5 = new System.Windows.Forms.Label();
             this.SummBox = new System.Windows.Forms.TextBox();
+            this.lbl3 = new System.Windows.Forms.Label();
+            this.ContBox = new System.Windows.Forms.TextBox();
+            this.lbl4 = new System.Windows.Forms.Label();
+            this.emailBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lbl1
@@ -71,7 +75,7 @@
             // NameBox
             // 
             this.NameBox.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NameBox.Location = new System.Drawing.Point(180, 32);
+            this.NameBox.Location = new System.Drawing.Point(265, 26);
             this.NameBox.MaxLength = 40;
             this.NameBox.Name = "NameBox";
             this.NameBox.Size = new System.Drawing.Size(266, 27);
@@ -82,32 +86,72 @@
             this.lbl2.AutoSize = true;
             this.lbl2.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl2.ForeColor = System.Drawing.Color.White;
-            this.lbl2.Location = new System.Drawing.Point(61, 36);
+            this.lbl2.Location = new System.Drawing.Point(146, 30);
             this.lbl2.Name = "lbl2";
             this.lbl2.Size = new System.Drawing.Size(113, 23);
             this.lbl2.TabIndex = 0;
             this.lbl2.Text = "Full Name:";
+            // 
+            // lbl5
+            // 
+            this.lbl5.AutoSize = true;
+            this.lbl5.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl5.ForeColor = System.Drawing.Color.White;
+            this.lbl5.Location = new System.Drawing.Point(146, 65);
+            this.lbl5.Name = "lbl5";
+            this.lbl5.Size = new System.Drawing.Size(189, 23);
+            this.lbl5.TabIndex = 3;
+            this.lbl5.Text = "Resume Summary:";
+            // 
+            // SummBox
+            // 
+            this.SummBox.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SummBox.Location = new System.Drawing.Point(341, 59);
+            this.SummBox.MaxLength = 300;
+            this.SummBox.Multiline = true;
+            this.SummBox.Name = "SummBox";
+            this.SummBox.Size = new System.Drawing.Size(721, 82);
+            this.SummBox.TabIndex = 4;
             // 
             // lbl3
             // 
             this.lbl3.AutoSize = true;
             this.lbl3.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl3.ForeColor = System.Drawing.Color.White;
-            this.lbl3.Location = new System.Drawing.Point(61, 71);
+            this.lbl3.Location = new System.Drawing.Point(537, 30);
             this.lbl3.Name = "lbl3";
-            this.lbl3.Size = new System.Drawing.Size(189, 23);
-            this.lbl3.TabIndex = 3;
-            this.lbl3.Text = "Resume Summary:";
+            this.lbl3.Size = new System.Drawing.Size(109, 23);
+            this.lbl3.TabIndex = 5;
+            this.lbl3.Text = "Contact #:";
             // 
-            // SummBox
+            // ContBox
             // 
-            this.SummBox.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SummBox.Location = new System.Drawing.Point(256, 65);
-            this.SummBox.MaxLength = 300;
-            this.SummBox.Multiline = true;
-            this.SummBox.Name = "SummBox";
-            this.SummBox.Size = new System.Drawing.Size(721, 82);
-            this.SummBox.TabIndex = 4;
+            this.ContBox.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ContBox.Location = new System.Drawing.Point(652, 26);
+            this.ContBox.MaxLength = 11;
+            this.ContBox.Name = "ContBox";
+            this.ContBox.Size = new System.Drawing.Size(98, 27);
+            this.ContBox.TabIndex = 6;
+            // 
+            // lbl4
+            // 
+            this.lbl4.AutoSize = true;
+            this.lbl4.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl4.ForeColor = System.Drawing.Color.White;
+            this.lbl4.Location = new System.Drawing.Point(756, 30);
+            this.lbl4.Name = "lbl4";
+            this.lbl4.Size = new System.Drawing.Size(70, 23);
+            this.lbl4.TabIndex = 7;
+            this.lbl4.Text = "Email:";
+            // 
+            // emailBox
+            // 
+            this.emailBox.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailBox.Location = new System.Drawing.Point(832, 26);
+            this.emailBox.MaxLength = 32;
+            this.emailBox.Name = "emailBox";
+            this.emailBox.Size = new System.Drawing.Size(230, 27);
+            this.emailBox.TabIndex = 8;
             // 
             // ResumeCreate
             // 
@@ -115,8 +159,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGreen;
             this.ClientSize = new System.Drawing.Size(1221, 669);
-            this.Controls.Add(this.SummBox);
+            this.Controls.Add(this.emailBox);
+            this.Controls.Add(this.lbl4);
+            this.Controls.Add(this.ContBox);
             this.Controls.Add(this.lbl3);
+            this.Controls.Add(this.SummBox);
+            this.Controls.Add(this.lbl5);
             this.Controls.Add(this.lbl2);
             this.Controls.Add(this.NameBox);
             this.Controls.Add(this.btn1);
@@ -140,8 +188,12 @@
         private System.Windows.Forms.Timer tmr;
         private System.Windows.Forms.TextBox NameBox;
         private System.Windows.Forms.Label lbl2;
-        private System.Windows.Forms.Label lbl3;
+        private System.Windows.Forms.Label lbl5;
         private System.Windows.Forms.TextBox SummBox;
+        private System.Windows.Forms.Label lbl3;
+        private System.Windows.Forms.TextBox ContBox;
+        private System.Windows.Forms.Label lbl4;
+        private System.Windows.Forms.TextBox emailBox;
     }
 }
 

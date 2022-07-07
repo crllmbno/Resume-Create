@@ -24,6 +24,10 @@ namespace ResumeCreate
             lbl2.Hide();
             NameBox.Hide();
             lbl3.Hide();
+            ContBox.Hide();
+            lbl4.Hide();
+            emailBox.Hide();
+            lbl5.Hide();
             SummBox.Hide();
         }
 
@@ -34,6 +38,10 @@ namespace ResumeCreate
             lbl2.Show();
             NameBox.Show();
             lbl3.Show();
+            ContBox.Show();
+            lbl4.Show();
+            emailBox.Show();    
+            lbl5.Show();
             SummBox.Show();
         }
     }
