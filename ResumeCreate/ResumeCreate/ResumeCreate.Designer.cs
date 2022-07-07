@@ -34,6 +34,8 @@
             this.tmr = new System.Windows.Forms.Timer(this.components);
             this.NameBox = new System.Windows.Forms.TextBox();
             this.lbl2 = new System.Windows.Forms.Label();
+            this.lbl3 = new System.Windows.Forms.Label();
+            this.SummBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lbl1
@@ -86,12 +88,35 @@
             this.lbl2.TabIndex = 0;
             this.lbl2.Text = "Full Name:";
             // 
+            // lbl3
+            // 
+            this.lbl3.AutoSize = true;
+            this.lbl3.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl3.ForeColor = System.Drawing.Color.White;
+            this.lbl3.Location = new System.Drawing.Point(61, 71);
+            this.lbl3.Name = "lbl3";
+            this.lbl3.Size = new System.Drawing.Size(189, 23);
+            this.lbl3.TabIndex = 3;
+            this.lbl3.Text = "Resume Summary:";
+            // 
+            // SummBox
+            // 
+            this.SummBox.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SummBox.Location = new System.Drawing.Point(256, 65);
+            this.SummBox.MaxLength = 300;
+            this.SummBox.Multiline = true;
+            this.SummBox.Name = "SummBox";
+            this.SummBox.Size = new System.Drawing.Size(721, 82);
+            this.SummBox.TabIndex = 4;
+            // 
             // ResumeCreate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGreen;
             this.ClientSize = new System.Drawing.Size(1221, 669);
+            this.Controls.Add(this.SummBox);
+            this.Controls.Add(this.lbl3);
             this.Controls.Add(this.lbl2);
             this.Controls.Add(this.NameBox);
             this.Controls.Add(this.btn1);
@@ -115,6 +140,8 @@
         private System.Windows.Forms.Timer tmr;
         private System.Windows.Forms.TextBox NameBox;
         private System.Windows.Forms.Label lbl2;
+        private System.Windows.Forms.Label lbl3;
+        private System.Windows.Forms.TextBox SummBox;
     }
 }
 

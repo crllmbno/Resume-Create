@@ -23,6 +23,8 @@ namespace ResumeCreate
             btn1.ForeColor = Color.White;
             lbl2.Hide();
             NameBox.Hide();
+            lbl3.Hide();
+            SummBox.Hide();
         }
 
         private void btn1_Click(object sender, EventArgs e)
@@ -31,6 +33,8 @@ namespace ResumeCreate
             btn1.Hide();
             lbl2.Show();
             NameBox.Show();
+            lbl3.Show();
+            SummBox.Show();
         }
     }
 }
