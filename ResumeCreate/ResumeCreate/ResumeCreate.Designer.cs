@@ -40,6 +40,8 @@
             this.ContBox = new System.Windows.Forms.TextBox();
             this.lbl4 = new System.Windows.Forms.Label();
             this.emailBox = new System.Windows.Forms.TextBox();
+            this.lbl6 = new System.Windows.Forms.Label();
+            this.ExpBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lbl1
@@ -153,12 +155,35 @@
             this.emailBox.Size = new System.Drawing.Size(230, 27);
             this.emailBox.TabIndex = 8;
             // 
+            // lbl6
+            // 
+            this.lbl6.AutoSize = true;
+            this.lbl6.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl6.ForeColor = System.Drawing.Color.White;
+            this.lbl6.Location = new System.Drawing.Point(146, 154);
+            this.lbl6.Name = "lbl6";
+            this.lbl6.Size = new System.Drawing.Size(251, 23);
+            this.lbl6.TabIndex = 9;
+            this.lbl6.Text = "Professional Experience:";
+            // 
+            // ExpBox
+            // 
+            this.ExpBox.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExpBox.Location = new System.Drawing.Point(403, 154);
+            this.ExpBox.MaxLength = 3000;
+            this.ExpBox.Multiline = true;
+            this.ExpBox.Name = "ExpBox";
+            this.ExpBox.Size = new System.Drawing.Size(721, 82);
+            this.ExpBox.TabIndex = 10;
+            // 
             // ResumeCreate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGreen;
             this.ClientSize = new System.Drawing.Size(1221, 669);
+            this.Controls.Add(this.ExpBox);
+            this.Controls.Add(this.lbl6);
             this.Controls.Add(this.emailBox);
             this.Controls.Add(this.lbl4);
             this.Controls.Add(this.ContBox);
@@ -194,6 +219,8 @@
         private System.Windows.Forms.TextBox ContBox;
         private System.Windows.Forms.Label lbl4;
         private System.Windows.Forms.TextBox emailBox;
+        private System.Windows.Forms.Label lbl6;
+        private System.Windows.Forms.TextBox ExpBox;
     }
 }
 
