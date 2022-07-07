@@ -29,6 +29,14 @@ namespace ResumeCreate
             emailBox.Hide();
             lbl5.Hide();
             SummBox.Hide();
+            lbl6.Hide();
+            lbl7.Hide();
+            lbl8.Hide();
+            ExpBox.Hide();
+            skillBox.Hide();
+            EducBox.Hide();
+            wrtJson.Hide();
+            jsonbox.Hide();
         }
 
         private void btn1_Click(object sender, EventArgs e)
@@ -43,6 +51,13 @@ namespace ResumeCreate
             emailBox.Show();    
             lbl5.Show();
             SummBox.Show();
+            lbl6.Show();
+            lbl7.Show();
+            lbl8.Show();
+            ExpBox.Show();
+            skillBox.Show();
+            EducBox.Show();
+            wrtJson.Show();
         }
     }
 }

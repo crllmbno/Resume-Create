@@ -9,3 +9,9 @@ C:\Users\veria\Desktop\ResumeCreate\ResumeCreate\ResumeCreate\obj\Debug\ResumeCr
 C:\Users\veria\Desktop\ResumeCreate\ResumeCreate\ResumeCreate\obj\Debug\ResumeCreate.csproj.CoreCompileInputs.cache
 C:\Users\veria\Desktop\ResumeCreate\ResumeCreate\ResumeCreate\obj\Debug\ResumeCreate.exe
 C:\Users\veria\Desktop\ResumeCreate\ResumeCreate\ResumeCreate\obj\Debug\ResumeCreate.pdb
+C:\Users\veria\Desktop\ResumeCreate\ResumeCreate\ResumeCreate\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\veria\Desktop\ResumeCreate\ResumeCreate\ResumeCreate\bin\Debug\itextsharp.dll
+C:\Users\veria\Desktop\ResumeCreate\ResumeCreate\ResumeCreate\bin\Debug\Newtonsoft.Json.dll
+C:\Users\veria\Desktop\ResumeCreate\ResumeCreate\ResumeCreate\bin\Debug\itextsharp.xml
+C:\Users\veria\Desktop\ResumeCreate\ResumeCreate\ResumeCreate\bin\Debug\Newtonsoft.Json.xml
+C:\Users\veria\Desktop\ResumeCreate\ResumeCreate\ResumeCreate\obj\Debug\ResumeCreate.csproj.CopyComplete
