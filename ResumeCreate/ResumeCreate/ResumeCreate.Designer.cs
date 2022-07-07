@@ -42,6 +42,8 @@
             this.emailBox = new System.Windows.Forms.TextBox();
             this.lbl6 = new System.Windows.Forms.Label();
             this.ExpBox = new System.Windows.Forms.TextBox();
+            this.lbl7 = new System.Windows.Forms.Label();
+            this.skillBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lbl1
@@ -176,12 +178,35 @@
             this.ExpBox.Size = new System.Drawing.Size(721, 82);
             this.ExpBox.TabIndex = 10;
             // 
+            // lbl7
+            // 
+            this.lbl7.AutoSize = true;
+            this.lbl7.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl7.ForeColor = System.Drawing.Color.White;
+            this.lbl7.Location = new System.Drawing.Point(146, 243);
+            this.lbl7.Name = "lbl7";
+            this.lbl7.Size = new System.Drawing.Size(205, 23);
+            this.lbl7.TabIndex = 11;
+            this.lbl7.Text = "Skills/Certifications:";
+            // 
+            // skillBox
+            // 
+            this.skillBox.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.skillBox.Location = new System.Drawing.Point(357, 243);
+            this.skillBox.MaxLength = 3000;
+            this.skillBox.Multiline = true;
+            this.skillBox.Name = "skillBox";
+            this.skillBox.Size = new System.Drawing.Size(721, 82);
+            this.skillBox.TabIndex = 12;
+            // 
             // ResumeCreate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGreen;
             this.ClientSize = new System.Drawing.Size(1221, 669);
+            this.Controls.Add(this.skillBox);
+            this.Controls.Add(this.lbl7);
             this.Controls.Add(this.ExpBox);
             this.Controls.Add(this.lbl6);
             this.Controls.Add(this.emailBox);
@@ -221,6 +246,8 @@
         private System.Windows.Forms.TextBox emailBox;
         private System.Windows.Forms.Label lbl6;
         private System.Windows.Forms.TextBox ExpBox;
+        private System.Windows.Forms.Label lbl7;
+        private System.Windows.Forms.TextBox skillBox;
     }
 }
 
