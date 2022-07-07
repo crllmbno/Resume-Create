@@ -48,7 +48,7 @@ namespace ResumeCreate
             lbl3.Show();
             ContBox.Show();
             lbl4.Show();
-            emailBox.Show();    
+            emailBox.Show();
             lbl5.Show();
             SummBox.Show();
             lbl6.Show();
@@ -71,5 +71,6 @@ namespace ResumeCreate
             LV1.Columns.Add("Skills", 250);
             LV1.Columns.Add("Education", 250);
         }
+
     }
 }
