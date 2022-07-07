@@ -183,11 +183,11 @@
             this.wrtJson.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.wrtJson.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wrtJson.ForeColor = System.Drawing.Color.White;
-            this.wrtJson.Location = new System.Drawing.Point(1007, 502);
+            this.wrtJson.Location = new System.Drawing.Point(999, 584);
             this.wrtJson.Name = "wrtJson";
-            this.wrtJson.Size = new System.Drawing.Size(85, 34);
+            this.wrtJson.Size = new System.Drawing.Size(93, 34);
             this.wrtJson.TabIndex = 15;
-            this.wrtJson.Text = "writeJSON";
+            this.wrtJson.Text = "createJSON";
             this.wrtJson.UseVisualStyleBackColor = true;
             this.wrtJson.Click += new System.EventHandler(this.wrtJson_Click);
             // 

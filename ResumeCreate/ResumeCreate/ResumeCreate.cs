@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Newtonsoft.Json;
-using Newtonsoft;
 
 namespace ResumeCreate
 {
@@ -88,17 +87,24 @@ namespace ResumeCreate
 
         private void wrtJson_Click(object sender, EventArgs e)
         {
-            _ = new Details();
+            details Data = new details()
             {
-             
-            }
+                Name = FirstNameBox.Text + MIBox.Text + LastNameBox.Text,
+                Contactinfo = CPNoBox.Text + " or " + TeleNoBox.Text,
+                Summary = summaryBox.Text,
+                Experience = experienceBox.Text,
+                Skills = skillsBox.Text,
+                Education = courseBox.Text + "\r\n" + UniBox.Text + "\r\n" + SYBox1.Text + " to " + SYBox2,
+
+            };
+
         }
         
 
-        public class Details
+        public class details
         {
             public string Name { get; set; }
-            public int Contactinfo { get; set; }
+            public string Contactinfo { get; set; }
             public string Email { get; set; }
             public string Summary { get; set; }
             public string Experience { get; set; }
