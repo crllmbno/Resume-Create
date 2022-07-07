@@ -32,6 +32,8 @@
             this.lbl1 = new System.Windows.Forms.Label();
             this.btn1 = new System.Windows.Forms.Button();
             this.tmr = new System.Windows.Forms.Timer(this.components);
+            this.NameBox = new System.Windows.Forms.TextBox();
+            this.lbl2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbl1
@@ -64,12 +66,34 @@
             this.tmr.Enabled = true;
             this.tmr.Interval = 1000;
             // 
+            // NameBox
+            // 
+            this.NameBox.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NameBox.Location = new System.Drawing.Point(180, 32);
+            this.NameBox.MaxLength = 40;
+            this.NameBox.Name = "NameBox";
+            this.NameBox.Size = new System.Drawing.Size(266, 27);
+            this.NameBox.TabIndex = 2;
+            // 
+            // lbl2
+            // 
+            this.lbl2.AutoSize = true;
+            this.lbl2.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2.ForeColor = System.Drawing.Color.White;
+            this.lbl2.Location = new System.Drawing.Point(61, 36);
+            this.lbl2.Name = "lbl2";
+            this.lbl2.Size = new System.Drawing.Size(113, 23);
+            this.lbl2.TabIndex = 0;
+            this.lbl2.Text = "Full Name:";
+            // 
             // ResumeCreate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGreen;
             this.ClientSize = new System.Drawing.Size(1221, 669);
+            this.Controls.Add(this.lbl2);
+            this.Controls.Add(this.NameBox);
             this.Controls.Add(this.btn1);
             this.Controls.Add(this.lbl1);
             this.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -89,6 +113,8 @@
         private System.Windows.Forms.Label lbl1;
         private System.Windows.Forms.Button btn1;
         private System.Windows.Forms.Timer tmr;
+        private System.Windows.Forms.TextBox NameBox;
+        private System.Windows.Forms.Label lbl2;
     }
 }
 

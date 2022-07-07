@@ -21,12 +21,16 @@ namespace ResumeCreate
         {
             lbl1.ForeColor = Color.White;
             btn1.ForeColor = Color.White;
+            lbl2.Hide();
+            NameBox.Hide();
         }
 
         private void btn1_Click(object sender, EventArgs e)
         {
             lbl1.Hide();
             btn1.Hide();
+            lbl2.Show();
+            NameBox.Show();
         }
     }
 }
