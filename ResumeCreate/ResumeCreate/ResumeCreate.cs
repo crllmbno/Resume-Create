@@ -10,11 +10,23 @@ using System.Windows.Forms;
 
 namespace ResumeCreate
 {
-    public partial class Form1 : Form
+    public partial class ResumeCreate : Form
     {
-        public Form1()
+        public ResumeCreate()
         {
             InitializeComponent();
+        }
+
+        private void ResumeCreate_Load(object sender, EventArgs e)
+        {
+            lbl1.ForeColor = Color.White;
+            btn1.ForeColor = Color.White;
+        }
+
+        private void btn1_Click(object sender, EventArgs e)
+        {
+            lbl1.Hide();
+            btn1.Hide();
         }
     }
 }

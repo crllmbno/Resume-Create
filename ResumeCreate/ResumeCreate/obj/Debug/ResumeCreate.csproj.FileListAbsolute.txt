@@ -1,0 +1,11 @@
+C:\Users\veria\Desktop\ResumeCreate\ResumeCreate\ResumeCreate\bin\Debug\ResumeCreate.exe.config
+C:\Users\veria\Desktop\ResumeCreate\ResumeCreate\ResumeCreate\bin\Debug\ResumeCreate.exe
+C:\Users\veria\Desktop\ResumeCreate\ResumeCreate\ResumeCreate\bin\Debug\ResumeCreate.pdb
+C:\Users\veria\Desktop\ResumeCreate\ResumeCreate\ResumeCreate\obj\Debug\ResumeCreate.csproj.AssemblyReference.cache
+C:\Users\veria\Desktop\ResumeCreate\ResumeCreate\ResumeCreate\obj\Debug\ResumeCreate.csproj.SuggestedBindingRedirects.cache
+C:\Users\veria\Desktop\ResumeCreate\ResumeCreate\ResumeCreate\obj\Debug\ResumeCreate.ResumeCreate.resources
+C:\Users\veria\Desktop\ResumeCreate\ResumeCreate\ResumeCreate\obj\Debug\ResumeCreate.Properties.Resources.resources
+C:\Users\veria\Desktop\ResumeCreate\ResumeCreate\ResumeCreate\obj\Debug\ResumeCreate.csproj.GenerateResource.cache
+C:\Users\veria\Desktop\ResumeCreate\ResumeCreate\ResumeCreate\obj\Debug\ResumeCreate.csproj.CoreCompileInputs.cache
+C:\Users\veria\Desktop\ResumeCreate\ResumeCreate\ResumeCreate\obj\Debug\ResumeCreate.exe
+C:\Users\veria\Desktop\ResumeCreate\ResumeCreate\ResumeCreate\obj\Debug\ResumeCreate.pdb
