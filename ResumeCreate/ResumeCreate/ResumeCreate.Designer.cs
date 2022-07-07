@@ -47,7 +47,7 @@
             this.lbl8 = new System.Windows.Forms.Label();
             this.EducBox = new System.Windows.Forms.TextBox();
             this.wrtJson = new System.Windows.Forms.Button();
-            this.jsonbox = new System.Windows.Forms.TextBox();
+            this.LV1 = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
             // lbl1
@@ -236,15 +236,14 @@
             this.wrtJson.Text = "writeJSON";
             this.wrtJson.UseVisualStyleBackColor = true;
             // 
-            // jsonbox
+            // LV1
             // 
-            this.jsonbox.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.jsonbox.Location = new System.Drawing.Point(82, 61);
-            this.jsonbox.MaxLength = 3000;
-            this.jsonbox.Multiline = true;
-            this.jsonbox.Name = "jsonbox";
-            this.jsonbox.Size = new System.Drawing.Size(1066, 539);
-            this.jsonbox.TabIndex = 16;
+            this.LV1.HideSelection = false;
+            this.LV1.Location = new System.Drawing.Point(85, 43);
+            this.LV1.Name = "LV1";
+            this.LV1.Size = new System.Drawing.Size(1058, 566);
+            this.LV1.TabIndex = 16;
+            this.LV1.UseCompatibleStateImageBehavior = false;
             // 
             // ResumeCreate
             // 
@@ -252,7 +251,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGreen;
             this.ClientSize = new System.Drawing.Size(1221, 669);
-            this.Controls.Add(this.jsonbox);
+            this.Controls.Add(this.LV1);
             this.Controls.Add(this.wrtJson);
             this.Controls.Add(this.EducBox);
             this.Controls.Add(this.lbl8);
@@ -302,7 +301,7 @@
         private System.Windows.Forms.Label lbl8;
         private System.Windows.Forms.TextBox EducBox;
         private System.Windows.Forms.Button wrtJson;
-        private System.Windows.Forms.TextBox jsonbox;
+        private System.Windows.Forms.ListView LV1;
     }
 }
 

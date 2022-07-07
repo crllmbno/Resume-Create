@@ -36,7 +36,7 @@ namespace ResumeCreate
             skillBox.Hide();
             EducBox.Hide();
             wrtJson.Hide();
-            jsonbox.Hide();
+            LV1.Hide();
         }
 
         private void btn1_Click(object sender, EventArgs e)
@@ -58,6 +58,18 @@ namespace ResumeCreate
             skillBox.Show();
             EducBox.Show();
             wrtJson.Show();
+        }
+
+        private void filldata()
+        {
+            LV1.Clear();
+            LV1.Columns.Add("Name", 250);
+            LV1.Columns.Add("Contact#", 250);
+            LV1.Columns.Add("Email", 250);
+            LV1.Columns.Add("Resume Summary", 250);
+            LV1.Columns.Add("Professional Experiences", 250);
+            LV1.Columns.Add("Skills", 250);
+            LV1.Columns.Add("Education", 250);
         }
     }
 }
