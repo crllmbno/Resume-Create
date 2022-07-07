@@ -44,6 +44,8 @@
             this.ExpBox = new System.Windows.Forms.TextBox();
             this.lbl7 = new System.Windows.Forms.Label();
             this.skillBox = new System.Windows.Forms.TextBox();
+            this.lbl8 = new System.Windows.Forms.Label();
+            this.EducBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lbl1
@@ -79,7 +81,7 @@
             // NameBox
             // 
             this.NameBox.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NameBox.Location = new System.Drawing.Point(265, 26);
+            this.NameBox.Location = new System.Drawing.Point(274, 113);
             this.NameBox.MaxLength = 40;
             this.NameBox.Name = "NameBox";
             this.NameBox.Size = new System.Drawing.Size(266, 27);
@@ -90,7 +92,7 @@
             this.lbl2.AutoSize = true;
             this.lbl2.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl2.ForeColor = System.Drawing.Color.White;
-            this.lbl2.Location = new System.Drawing.Point(146, 30);
+            this.lbl2.Location = new System.Drawing.Point(155, 117);
             this.lbl2.Name = "lbl2";
             this.lbl2.Size = new System.Drawing.Size(113, 23);
             this.lbl2.TabIndex = 0;
@@ -101,7 +103,7 @@
             this.lbl5.AutoSize = true;
             this.lbl5.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl5.ForeColor = System.Drawing.Color.White;
-            this.lbl5.Location = new System.Drawing.Point(146, 65);
+            this.lbl5.Location = new System.Drawing.Point(155, 152);
             this.lbl5.Name = "lbl5";
             this.lbl5.Size = new System.Drawing.Size(189, 23);
             this.lbl5.TabIndex = 3;
@@ -110,11 +112,11 @@
             // SummBox
             // 
             this.SummBox.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SummBox.Location = new System.Drawing.Point(341, 59);
+            this.SummBox.Location = new System.Drawing.Point(350, 146);
             this.SummBox.MaxLength = 300;
             this.SummBox.Multiline = true;
             this.SummBox.Name = "SummBox";
-            this.SummBox.Size = new System.Drawing.Size(721, 82);
+            this.SummBox.Size = new System.Drawing.Size(737, 82);
             this.SummBox.TabIndex = 4;
             // 
             // lbl3
@@ -122,7 +124,7 @@
             this.lbl3.AutoSize = true;
             this.lbl3.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl3.ForeColor = System.Drawing.Color.White;
-            this.lbl3.Location = new System.Drawing.Point(537, 30);
+            this.lbl3.Location = new System.Drawing.Point(566, 117);
             this.lbl3.Name = "lbl3";
             this.lbl3.Size = new System.Drawing.Size(109, 23);
             this.lbl3.TabIndex = 5;
@@ -131,7 +133,7 @@
             // ContBox
             // 
             this.ContBox.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ContBox.Location = new System.Drawing.Point(652, 26);
+            this.ContBox.Location = new System.Drawing.Point(681, 113);
             this.ContBox.MaxLength = 11;
             this.ContBox.Name = "ContBox";
             this.ContBox.Size = new System.Drawing.Size(98, 27);
@@ -142,7 +144,7 @@
             this.lbl4.AutoSize = true;
             this.lbl4.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl4.ForeColor = System.Drawing.Color.White;
-            this.lbl4.Location = new System.Drawing.Point(756, 30);
+            this.lbl4.Location = new System.Drawing.Point(794, 117);
             this.lbl4.Name = "lbl4";
             this.lbl4.Size = new System.Drawing.Size(70, 23);
             this.lbl4.TabIndex = 7;
@@ -151,10 +153,10 @@
             // emailBox
             // 
             this.emailBox.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailBox.Location = new System.Drawing.Point(832, 26);
+            this.emailBox.Location = new System.Drawing.Point(870, 113);
             this.emailBox.MaxLength = 32;
             this.emailBox.Name = "emailBox";
-            this.emailBox.Size = new System.Drawing.Size(230, 27);
+            this.emailBox.Size = new System.Drawing.Size(217, 27);
             this.emailBox.TabIndex = 8;
             // 
             // lbl6
@@ -162,7 +164,7 @@
             this.lbl6.AutoSize = true;
             this.lbl6.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl6.ForeColor = System.Drawing.Color.White;
-            this.lbl6.Location = new System.Drawing.Point(146, 154);
+            this.lbl6.Location = new System.Drawing.Point(155, 241);
             this.lbl6.Name = "lbl6";
             this.lbl6.Size = new System.Drawing.Size(251, 23);
             this.lbl6.TabIndex = 9;
@@ -171,11 +173,11 @@
             // ExpBox
             // 
             this.ExpBox.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ExpBox.Location = new System.Drawing.Point(403, 154);
+            this.ExpBox.Location = new System.Drawing.Point(412, 241);
             this.ExpBox.MaxLength = 3000;
             this.ExpBox.Multiline = true;
             this.ExpBox.Name = "ExpBox";
-            this.ExpBox.Size = new System.Drawing.Size(721, 82);
+            this.ExpBox.Size = new System.Drawing.Size(675, 82);
             this.ExpBox.TabIndex = 10;
             // 
             // lbl7
@@ -183,7 +185,7 @@
             this.lbl7.AutoSize = true;
             this.lbl7.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl7.ForeColor = System.Drawing.Color.White;
-            this.lbl7.Location = new System.Drawing.Point(146, 243);
+            this.lbl7.Location = new System.Drawing.Point(155, 330);
             this.lbl7.Name = "lbl7";
             this.lbl7.Size = new System.Drawing.Size(205, 23);
             this.lbl7.TabIndex = 11;
@@ -192,12 +194,33 @@
             // skillBox
             // 
             this.skillBox.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.skillBox.Location = new System.Drawing.Point(357, 243);
+            this.skillBox.Location = new System.Drawing.Point(366, 330);
             this.skillBox.MaxLength = 3000;
             this.skillBox.Multiline = true;
             this.skillBox.Name = "skillBox";
             this.skillBox.Size = new System.Drawing.Size(721, 82);
             this.skillBox.TabIndex = 12;
+            // 
+            // lbl8
+            // 
+            this.lbl8.AutoSize = true;
+            this.lbl8.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl8.ForeColor = System.Drawing.Color.White;
+            this.lbl8.Location = new System.Drawing.Point(155, 422);
+            this.lbl8.Name = "lbl8";
+            this.lbl8.Size = new System.Drawing.Size(112, 23);
+            this.lbl8.TabIndex = 13;
+            this.lbl8.Text = "Education:";
+            // 
+            // EducBox
+            // 
+            this.EducBox.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EducBox.Location = new System.Drawing.Point(273, 422);
+            this.EducBox.MaxLength = 3000;
+            this.EducBox.Multiline = true;
+            this.EducBox.Name = "EducBox";
+            this.EducBox.Size = new System.Drawing.Size(814, 82);
+            this.EducBox.TabIndex = 14;
             // 
             // ResumeCreate
             // 
@@ -205,6 +228,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGreen;
             this.ClientSize = new System.Drawing.Size(1221, 669);
+            this.Controls.Add(this.EducBox);
+            this.Controls.Add(this.lbl8);
             this.Controls.Add(this.skillBox);
             this.Controls.Add(this.lbl7);
             this.Controls.Add(this.ExpBox);
@@ -248,6 +273,8 @@
         private System.Windows.Forms.TextBox ExpBox;
         private System.Windows.Forms.Label lbl7;
         private System.Windows.Forms.TextBox skillBox;
+        private System.Windows.Forms.Label lbl8;
+        private System.Windows.Forms.TextBox EducBox;
     }
 }
 
