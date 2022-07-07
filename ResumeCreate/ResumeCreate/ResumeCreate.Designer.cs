@@ -41,7 +41,6 @@
             this.lbl7 = new System.Windows.Forms.Label();
             this.lbl8 = new System.Windows.Forms.Label();
             this.wrtJson = new System.Windows.Forms.Button();
-            this.LV1 = new System.Windows.Forms.ListView();
             this.FirstNameBox = new System.Windows.Forms.TextBox();
             this.MIBox = new System.Windows.Forms.TextBox();
             this.CPNoBox = new System.Windows.Forms.TextBox();
@@ -54,8 +53,8 @@
             this.lbl10 = new System.Windows.Forms.Label();
             this.UniBox = new System.Windows.Forms.TextBox();
             this.lbl12 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
+            this.courseBox = new System.Windows.Forms.TextBox();
+            this.lbl11 = new System.Windows.Forms.Label();
             this.SYBox1 = new System.Windows.Forms.ComboBox();
             this.lbl13 = new System.Windows.Forms.Label();
             this.lbl14 = new System.Windows.Forms.Label();
@@ -95,7 +94,7 @@
             // LastNameBox
             // 
             this.LastNameBox.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LastNameBox.Location = new System.Drawing.Point(164, 28);
+            this.LastNameBox.Location = new System.Drawing.Point(164, 96);
             this.LastNameBox.MaxLength = 16;
             this.LastNameBox.Name = "LastNameBox";
             this.LastNameBox.Size = new System.Drawing.Size(137, 27);
@@ -107,7 +106,7 @@
             this.lbl2.AutoSize = true;
             this.lbl2.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl2.ForeColor = System.Drawing.Color.White;
-            this.lbl2.Location = new System.Drawing.Point(200, 58);
+            this.lbl2.Location = new System.Drawing.Point(200, 126);
             this.lbl2.Name = "lbl2";
             this.lbl2.Size = new System.Drawing.Size(68, 16);
             this.lbl2.TabIndex = 0;
@@ -118,7 +117,7 @@
             this.lbl5.AutoSize = true;
             this.lbl5.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl5.ForeColor = System.Drawing.Color.White;
-            this.lbl5.Location = new System.Drawing.Point(535, 58);
+            this.lbl5.Location = new System.Drawing.Point(535, 126);
             this.lbl5.Name = "lbl5";
             this.lbl5.Size = new System.Drawing.Size(76, 16);
             this.lbl5.TabIndex = 0;
@@ -129,7 +128,7 @@
             this.lbl3.AutoSize = true;
             this.lbl3.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl3.ForeColor = System.Drawing.Color.White;
-            this.lbl3.Location = new System.Drawing.Point(342, 58);
+            this.lbl3.Location = new System.Drawing.Point(342, 126);
             this.lbl3.Name = "lbl3";
             this.lbl3.Size = new System.Drawing.Size(69, 16);
             this.lbl3.TabIndex = 0;
@@ -140,7 +139,7 @@
             this.lbl4.AutoSize = true;
             this.lbl4.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl4.ForeColor = System.Drawing.Color.White;
-            this.lbl4.Location = new System.Drawing.Point(447, 58);
+            this.lbl4.Location = new System.Drawing.Point(447, 126);
             this.lbl4.Name = "lbl4";
             this.lbl4.Size = new System.Drawing.Size(30, 16);
             this.lbl4.TabIndex = 0;
@@ -151,7 +150,7 @@
             this.lbl6.AutoSize = true;
             this.lbl6.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl6.ForeColor = System.Drawing.Color.White;
-            this.lbl6.Location = new System.Drawing.Point(635, 58);
+            this.lbl6.Location = new System.Drawing.Point(635, 126);
             this.lbl6.Name = "lbl6";
             this.lbl6.Size = new System.Drawing.Size(56, 16);
             this.lbl6.TabIndex = 0;
@@ -162,7 +161,7 @@
             this.lbl7.AutoSize = true;
             this.lbl7.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl7.ForeColor = System.Drawing.Color.White;
-            this.lbl7.Location = new System.Drawing.Point(751, 58);
+            this.lbl7.Location = new System.Drawing.Point(751, 126);
             this.lbl7.Name = "lbl7";
             this.lbl7.Size = new System.Drawing.Size(91, 16);
             this.lbl7.TabIndex = 0;
@@ -173,7 +172,7 @@
             this.lbl8.AutoSize = true;
             this.lbl8.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl8.ForeColor = System.Drawing.Color.White;
-            this.lbl8.Location = new System.Drawing.Point(534, 160);
+            this.lbl8.Location = new System.Drawing.Point(534, 228);
             this.lbl8.Name = "lbl8";
             this.lbl8.Size = new System.Drawing.Size(142, 19);
             this.lbl8.TabIndex = 0;
@@ -192,19 +191,10 @@
             this.wrtJson.UseVisualStyleBackColor = true;
             this.wrtJson.Click += new System.EventHandler(this.wrtJson_Click);
             // 
-            // LV1
-            // 
-            this.LV1.HideSelection = false;
-            this.LV1.Location = new System.Drawing.Point(124, 602);
-            this.LV1.Name = "LV1";
-            this.LV1.Size = new System.Drawing.Size(1058, 566);
-            this.LV1.TabIndex = 16;
-            this.LV1.UseCompatibleStateImageBehavior = false;
-            // 
             // FirstNameBox
             // 
             this.FirstNameBox.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FirstNameBox.Location = new System.Drawing.Point(307, 28);
+            this.FirstNameBox.Location = new System.Drawing.Point(307, 96);
             this.FirstNameBox.MaxLength = 16;
             this.FirstNameBox.Name = "FirstNameBox";
             this.FirstNameBox.Size = new System.Drawing.Size(137, 27);
@@ -214,7 +204,7 @@
             // MIBox
             // 
             this.MIBox.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MIBox.Location = new System.Drawing.Point(450, 28);
+            this.MIBox.Location = new System.Drawing.Point(450, 96);
             this.MIBox.MaxLength = 2;
             this.MIBox.Name = "MIBox";
             this.MIBox.Size = new System.Drawing.Size(27, 27);
@@ -224,7 +214,7 @@
             // CPNoBox
             // 
             this.CPNoBox.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CPNoBox.Location = new System.Drawing.Point(523, 28);
+            this.CPNoBox.Location = new System.Drawing.Point(523, 96);
             this.CPNoBox.MaxLength = 11;
             this.CPNoBox.Name = "CPNoBox";
             this.CPNoBox.Size = new System.Drawing.Size(97, 27);
@@ -234,7 +224,7 @@
             // TeleNoBox
             // 
             this.TeleNoBox.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TeleNoBox.Location = new System.Drawing.Point(626, 28);
+            this.TeleNoBox.Location = new System.Drawing.Point(626, 96);
             this.TeleNoBox.MaxLength = 7;
             this.TeleNoBox.Name = "TeleNoBox";
             this.TeleNoBox.Size = new System.Drawing.Size(72, 27);
@@ -244,7 +234,7 @@
             // emailAddBox
             // 
             this.emailAddBox.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailAddBox.Location = new System.Drawing.Point(704, 28);
+            this.emailAddBox.Location = new System.Drawing.Point(704, 96);
             this.emailAddBox.MaxLength = 32;
             this.emailAddBox.Name = "emailAddBox";
             this.emailAddBox.Size = new System.Drawing.Size(184, 27);
@@ -254,7 +244,7 @@
             // summaryBox
             // 
             this.summaryBox.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.summaryBox.Location = new System.Drawing.Point(164, 87);
+            this.summaryBox.Location = new System.Drawing.Point(164, 155);
             this.summaryBox.MaxLength = 342;
             this.summaryBox.Multiline = true;
             this.summaryBox.Name = "summaryBox";
@@ -264,7 +254,7 @@
             // experienceBox
             // 
             this.experienceBox.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.experienceBox.Location = new System.Drawing.Point(164, 182);
+            this.experienceBox.Location = new System.Drawing.Point(164, 250);
             this.experienceBox.MaxLength = 2000;
             this.experienceBox.Multiline = true;
             this.experienceBox.Name = "experienceBox";
@@ -276,7 +266,7 @@
             this.lbl9.AutoSize = true;
             this.lbl9.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl9.ForeColor = System.Drawing.Color.White;
-            this.lbl9.Location = new System.Drawing.Point(519, 313);
+            this.lbl9.Location = new System.Drawing.Point(519, 381);
             this.lbl9.Name = "lbl9";
             this.lbl9.Size = new System.Drawing.Size(185, 19);
             this.lbl9.TabIndex = 0;
@@ -285,7 +275,7 @@
             // skillsBox
             // 
             this.skillsBox.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.skillsBox.Location = new System.Drawing.Point(164, 335);
+            this.skillsBox.Location = new System.Drawing.Point(164, 403);
             this.skillsBox.MaxLength = 300;
             this.skillsBox.Multiline = true;
             this.skillsBox.Name = "skillsBox";
@@ -297,7 +287,7 @@
             this.lbl10.AutoSize = true;
             this.lbl10.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl10.ForeColor = System.Drawing.Color.White;
-            this.lbl10.Location = new System.Drawing.Point(245, 466);
+            this.lbl10.Location = new System.Drawing.Point(245, 534);
             this.lbl10.Name = "lbl10";
             this.lbl10.Size = new System.Drawing.Size(150, 19);
             this.lbl10.TabIndex = 0;
@@ -306,7 +296,7 @@
             // UniBox
             // 
             this.UniBox.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UniBox.Location = new System.Drawing.Point(523, 387);
+            this.UniBox.Location = new System.Drawing.Point(523, 455);
             this.UniBox.MaxLength = 100;
             this.UniBox.Name = "UniBox";
             this.UniBox.Size = new System.Drawing.Size(365, 27);
@@ -318,35 +308,36 @@
             this.lbl12.AutoSize = true;
             this.lbl12.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl12.ForeColor = System.Drawing.Color.White;
-            this.lbl12.Location = new System.Drawing.Point(622, 417);
+            this.lbl12.Location = new System.Drawing.Point(622, 485);
             this.lbl12.Name = "lbl12";
             this.lbl12.Size = new System.Drawing.Size(168, 19);
             this.lbl12.TabIndex = 0;
             this.lbl12.Text = "University Graduated";
             // 
-            // textBox1
+            // courseBox
             // 
-            this.textBox1.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(523, 335);
-            this.textBox1.MaxLength = 100;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(365, 27);
-            this.textBox1.TabIndex = 11;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.courseBox.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.courseBox.Location = new System.Drawing.Point(523, 403);
+            this.courseBox.MaxLength = 100;
+            this.courseBox.Name = "courseBox";
+            this.courseBox.Size = new System.Drawing.Size(365, 27);
+            this.courseBox.TabIndex = 11;
+            this.courseBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label11
+            // lbl11
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(670, 365);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(62, 19);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "Course";
+            this.lbl11.AutoSize = true;
+            this.lbl11.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl11.ForeColor = System.Drawing.Color.White;
+            this.lbl11.Location = new System.Drawing.Point(670, 433);
+            this.lbl11.Name = "lbl11";
+            this.lbl11.Size = new System.Drawing.Size(62, 19);
+            this.lbl11.TabIndex = 0;
+            this.lbl11.Text = "Course";
             // 
             // SYBox1
             // 
+            this.SYBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.SYBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SYBox1.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SYBox1.FormattingEnabled = true;
@@ -882,7 +873,7 @@
             "2028",
             "2029",
             "2030"});
-            this.SYBox1.Location = new System.Drawing.Point(570, 442);
+            this.SYBox1.Location = new System.Drawing.Point(570, 510);
             this.SYBox1.MaxLength = 4;
             this.SYBox1.Name = "SYBox1";
             this.SYBox1.Size = new System.Drawing.Size(61, 27);
@@ -893,7 +884,7 @@
             this.lbl13.AutoSize = true;
             this.lbl13.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl13.ForeColor = System.Drawing.Color.White;
-            this.lbl13.Location = new System.Drawing.Point(637, 445);
+            this.lbl13.Location = new System.Drawing.Point(637, 513);
             this.lbl13.Name = "lbl13";
             this.lbl13.Size = new System.Drawing.Size(15, 19);
             this.lbl13.TabIndex = 0;
@@ -904,7 +895,7 @@
             this.lbl14.AutoSize = true;
             this.lbl14.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl14.ForeColor = System.Drawing.Color.White;
-            this.lbl14.Location = new System.Drawing.Point(526, 445);
+            this.lbl14.Location = new System.Drawing.Point(526, 513);
             this.lbl14.Name = "lbl14";
             this.lbl14.Size = new System.Drawing.Size(38, 19);
             this.lbl14.TabIndex = 0;
@@ -912,6 +903,7 @@
             // 
             // SYBox2
             // 
+            this.SYBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.SYBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SYBox2.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SYBox2.FormattingEnabled = true;
@@ -1447,7 +1439,7 @@
             "2028",
             "2029",
             "2030"});
-            this.SYBox2.Location = new System.Drawing.Point(658, 442);
+            this.SYBox2.Location = new System.Drawing.Point(658, 510);
             this.SYBox2.MaxLength = 4;
             this.SYBox2.Name = "SYBox2";
             this.SYBox2.Size = new System.Drawing.Size(61, 27);
@@ -1463,8 +1455,8 @@
             this.Controls.Add(this.lbl14);
             this.Controls.Add(this.lbl13);
             this.Controls.Add(this.SYBox1);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lbl11);
+            this.Controls.Add(this.courseBox);
             this.Controls.Add(this.lbl12);
             this.Controls.Add(this.UniBox);
             this.Controls.Add(this.lbl10);
@@ -1477,7 +1469,6 @@
             this.Controls.Add(this.CPNoBox);
             this.Controls.Add(this.MIBox);
             this.Controls.Add(this.FirstNameBox);
-            this.Controls.Add(this.LV1);
             this.Controls.Add(this.wrtJson);
             this.Controls.Add(this.lbl8);
             this.Controls.Add(this.lbl7);
@@ -1516,7 +1507,6 @@
         private System.Windows.Forms.Label lbl7;
         private System.Windows.Forms.Label lbl8;
         private System.Windows.Forms.Button wrtJson;
-        private System.Windows.Forms.ListView LV1;
         private System.Windows.Forms.TextBox FirstNameBox;
         private System.Windows.Forms.TextBox MIBox;
         private System.Windows.Forms.TextBox CPNoBox;
@@ -1529,8 +1519,8 @@
         private System.Windows.Forms.Label lbl10;
         private System.Windows.Forms.TextBox UniBox;
         private System.Windows.Forms.Label lbl12;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox courseBox;
+        private System.Windows.Forms.Label lbl11;
         private System.Windows.Forms.ComboBox SYBox1;
         private System.Windows.Forms.Label lbl13;
         private System.Windows.Forms.Label lbl14;
