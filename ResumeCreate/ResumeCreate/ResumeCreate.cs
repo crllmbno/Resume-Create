@@ -1,17 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Newtonsoft.Json;
 using System.IO;
 using PdfSharp.Drawing;
 using PdfSharp.Pdf;
-using System.Diagnostics;
+using PdfSharp.Drawing.Layout;
 
 namespace ResumeCreate
 {
@@ -133,19 +127,34 @@ namespace ResumeCreate
 
             XGraphics gfx = XGraphics.FromPdfPage(page);
 
-            gfx.DrawString("RESUME", new XFont("Rockwell", 25, XFontStyle.Bold), XBrushes.Black,
+            gfx.DrawString("RESUME", new XFont("Rockwell", 40, XFontStyle.Bold), XBrushes.Black,
                 new XPoint(50, 50));
-
+            
             int x = 50;
 
             gfx.DrawString(FirstNameBox.Text + " " + MIBox.Text + "." + " " + LastNameBox.Text,
-                new XFont("Tahoma", 16, XFontStyle.Regular), XBrushes.Black, new XPoint(x, 80));
+                new XFont("Tahoma", 25, XFontStyle.Regular), XBrushes.Black, new XPoint(x, 100));
 
             gfx.DrawString(CPNoBox.Text + " | " + TeleNoBox.Text + " | " + emailAddBox.Text, 
-                new XFont("Tahoma", 6, XFontStyle.Regular), XBrushes.Black, new XPoint(x, 90));
+                new XFont("Tahoma", 15, XFontStyle.Regular), XBrushes.Black, new XPoint(x, 120));
 
+            gfx.DrawString(summaryBox.Text, new XFont("Tahoma", 13, XFontStyle.Regular),
+                XBrushes.Black, new XPoint(x, 170));
 
+            gfx.DrawString(experienceBox.Text, new XFont("Tahoma", 13, XFontStyle.Regular),
+                XBrushes.Black, new XPoint(x, 200));
 
+            gfx.DrawString(skillsBox.Text, new XFont("Tahoma", 13, XFontStyle.Regular),
+                XBrushes.Black, new XPoint(x, 250));
+
+            gfx.DrawString(courseBox.Text, new XFont("Tahoma", 23, XFontStyle.Regular), 
+                XBrushes.Black, new XPoint(x, 350));
+
+            gfx.DrawString(UniBox.Text, new XFont("Tahoma", 15, XFontStyle.Regular),
+                XBrushes.Black, new XPoint(x, 370));
+
+            gfx.DrawString(SYBox1.Text + " - " + SYBox2.Text, new XFont("Tahoma", 12, XFontStyle.Regular),
+                XBrushes.Black, new XPoint(x, 390));
 
 
             doc.Save(Application.StartupPath + "\\PDF\\" + LastNameBox.Text + "_" + FirstNameBox.Text + ".pdf");

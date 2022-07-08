@@ -207,7 +207,7 @@
             // 
             this.MIBox.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MIBox.Location = new System.Drawing.Point(450, 96);
-            this.MIBox.MaxLength = 2;
+            this.MIBox.MaxLength = 1;
             this.MIBox.Name = "MIBox";
             this.MIBox.Size = new System.Drawing.Size(27, 27);
             this.MIBox.TabIndex = 4;
