@@ -100,8 +100,9 @@ namespace ResumeCreate
             };
 
             string jsonToWrite = JsonConvert.SerializeObject(Data);
-            File.WriteAllText()
-            
+            File.WriteAllText(Application.StartupPath + "\\JsonFiles\\" + LastNameBox.Text + "_" 
+                + FirstNameBox.Text + ".json", jsonToWrite);
+            MessageBox.Show("Saved");
         }
         
 
