@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Newtonsoft.Json;
 using System.IO;
+using PdfSharp.Drawing;
+using PdfSharp.Pdf;
+using System.Diagnostics;
 
 namespace ResumeCreate
 {
@@ -52,6 +55,7 @@ namespace ResumeCreate
             wrtJson.Hide();
             rdJSON.Hide();
             readJSON.Hide();
+            stPDF.Hide();
 
         }
 
@@ -87,6 +91,7 @@ namespace ResumeCreate
             btn1.Hide();
             wrtJson.Show();
             readJSON.Show();
+            stPDF.Show();
             
         }
 
@@ -130,6 +135,21 @@ namespace ResumeCreate
                 + "_" + FirstNameBox.Text + ".json");
             rdJSON.Text = str.ReadToEnd();
             str.Close();
+        }
+
+        private void stPDF_Click(object sender, EventArgs e)
+        {
+            PdfDocument doc = new PdfDocument();
+
+            PdfPage page = doc.AddPage();
+
+            XGraphics gfx = XGraphics.FromPdfPage(page);
+
+            XFont font = new XFont("Calibri", 20);
+
+            users.
+
+            doc.Save(Application.StartupPath + "\\PDF\\" + LastNameBox.Text + "_" + FirstNameBox.Text + ".pdf");
         }
 
         public class details

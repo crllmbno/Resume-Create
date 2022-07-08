@@ -10,8 +10,12 @@ C:\Users\veria\Desktop\ResumeCreate\ResumeCreate\ResumeCreate\obj\Debug\ResumeCr
 C:\Users\veria\Desktop\ResumeCreate\ResumeCreate\ResumeCreate\obj\Debug\ResumeCreate.exe
 C:\Users\veria\Desktop\ResumeCreate\ResumeCreate\ResumeCreate\obj\Debug\ResumeCreate.pdb
 C:\Users\veria\Desktop\ResumeCreate\ResumeCreate\ResumeCreate\bin\Debug\BouncyCastle.Crypto.dll
-C:\Users\veria\Desktop\ResumeCreate\ResumeCreate\ResumeCreate\bin\Debug\itextsharp.dll
 C:\Users\veria\Desktop\ResumeCreate\ResumeCreate\ResumeCreate\bin\Debug\Newtonsoft.Json.dll
-C:\Users\veria\Desktop\ResumeCreate\ResumeCreate\ResumeCreate\bin\Debug\itextsharp.xml
 C:\Users\veria\Desktop\ResumeCreate\ResumeCreate\ResumeCreate\bin\Debug\Newtonsoft.Json.xml
 C:\Users\veria\Desktop\ResumeCreate\ResumeCreate\ResumeCreate\obj\Debug\ResumeCreate.csproj.CopyComplete
+C:\Users\veria\Desktop\ResumeCreate\ResumeCreate\ResumeCreate\bin\Debug\PdfSharp.Charting.dll
+C:\Users\veria\Desktop\ResumeCreate\ResumeCreate\ResumeCreate\bin\Debug\PdfSharp.dll
+C:\Users\veria\Desktop\ResumeCreate\ResumeCreate\ResumeCreate\bin\Debug\PdfSharp.xml
+C:\Users\veria\Desktop\ResumeCreate\ResumeCreate\ResumeCreate\bin\Debug\PdfSharp.Charting.xml
+C:\Users\veria\Desktop\ResumeCreate\ResumeCreate\ResumeCreate\bin\Debug\de\PdfSharp.resources.dll
+C:\Users\veria\Desktop\ResumeCreate\ResumeCreate\ResumeCreate\bin\Debug\de\PdfSharp.Charting.resources.dll
