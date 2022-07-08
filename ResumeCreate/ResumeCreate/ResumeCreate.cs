@@ -54,7 +54,7 @@ namespace ResumeCreate
             SYBox2.Hide();
             wrtJson.Hide();
             rdJSON.Hide();
-            readJSON.Hide();
+            newbtn.Hide();
 
         }
 
@@ -89,7 +89,6 @@ namespace ResumeCreate
             SYBox2.Show();
             btn1.Hide();
             wrtJson.Show();
-            readJSON.Show();
             
         }
 
@@ -116,26 +115,14 @@ namespace ResumeCreate
             GeneratePDF();
             MessageBox.Show("Saved");
 
-
-            CPNoBox.Clear();
-            TeleNoBox.Clear();
-            emailAddBox.Clear();
-            summaryBox.Clear();
-            experienceBox.Clear();
-            skillsBox.Clear();
-            courseBox.Clear();
-            UniBox.Clear();
-            SYBox1.Items.Clear();
-            SYBox2.Items.Clear();
-        }
-
-        private void readJSON_Click(object sender, EventArgs e)
-        {
             rdJSON.Show();
             StreamReader str = new StreamReader(Application.StartupPath + "\\JsonFiles\\" + LastNameBox.Text
                 + "_" + FirstNameBox.Text + ".json");
             rdJSON.Text = str.ReadToEnd();
             str.Close();
+
+            wrtJson.Hide();
+            newbtn.Show();
         }
 
         private void GeneratePDF()
@@ -146,10 +133,19 @@ namespace ResumeCreate
 
             XGraphics gfx = XGraphics.FromPdfPage(page);
 
-            gfx.DrawString("Resume", new XFont("Rockwell", 40, XFontStyle.Bold), XBrushes.Black,
-                new XPoint(200, 70));
+            gfx.DrawString("RESUME", new XFont("Rockwell", 25, XFontStyle.Bold), XBrushes.Black,
+                new XPoint(50, 50));
 
-            XFont font = new XFont("Calibri", 20);
+            int x = 50;
+
+            gfx.DrawString(FirstNameBox.Text + " " + MIBox.Text + "." + " " + LastNameBox.Text,
+                new XFont("Tahoma", 16, XFontStyle.Regular), XBrushes.Black, new XPoint(x, 80));
+
+            gfx.DrawString(CPNoBox.Text + " | " + TeleNoBox.Text + " | " + emailAddBox.Text, 
+                new XFont("Tahoma", 6, XFontStyle.Regular), XBrushes.Black, new XPoint(x, 90));
+
+
+
 
 
             doc.Save(Application.StartupPath + "\\PDF\\" + LastNameBox.Text + "_" + FirstNameBox.Text + ".pdf");
@@ -167,6 +163,27 @@ namespace ResumeCreate
             public string University { get; set; }
             public string DateGrad { get; set; }
 
+        }
+
+        private void newbtn_Click(object sender, EventArgs e)
+        {
+            LastNameBox.Clear();
+            FirstNameBox.Clear();
+            MIBox.Clear();
+            CPNoBox.Clear();
+            TeleNoBox.Clear();
+            emailAddBox.Clear();
+            summaryBox.Clear();
+            experienceBox.Clear();
+            skillsBox.Clear();
+            courseBox.Clear();
+            UniBox.Clear();
+            SYBox1.Items.Clear();
+            SYBox2.Items.Clear();
+            rdJSON.Clear();
+            wrtJson.Show();
+            rdJSON.Hide();
+            newbtn.Hide();
         }
     }
 }

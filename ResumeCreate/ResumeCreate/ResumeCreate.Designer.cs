@@ -60,7 +60,7 @@
             this.lbl14 = new System.Windows.Forms.Label();
             this.SYBox2 = new System.Windows.Forms.ComboBox();
             this.rdJSON = new System.Windows.Forms.RichTextBox();
-            this.readJSON = new System.Windows.Forms.Button();
+            this.newbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbl1
@@ -656,18 +656,18 @@
             this.rdJSON.TabIndex = 16;
             this.rdJSON.Text = "";
             // 
-            // readJSON
+            // newbtn
             // 
-            this.readJSON.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.readJSON.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.readJSON.ForeColor = System.Drawing.Color.White;
-            this.readJSON.Location = new System.Drawing.Point(915, 584);
-            this.readJSON.Name = "readJSON";
-            this.readJSON.Size = new System.Drawing.Size(93, 34);
-            this.readJSON.TabIndex = 17;
-            this.readJSON.Text = "readJSON";
-            this.readJSON.UseVisualStyleBackColor = true;
-            this.readJSON.Click += new System.EventHandler(this.readJSON_Click);
+            this.newbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.newbtn.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newbtn.ForeColor = System.Drawing.Color.White;
+            this.newbtn.Location = new System.Drawing.Point(1061, 584);
+            this.newbtn.Name = "newbtn";
+            this.newbtn.Size = new System.Drawing.Size(46, 34);
+            this.newbtn.TabIndex = 17;
+            this.newbtn.Text = "new";
+            this.newbtn.UseVisualStyleBackColor = true;
+            this.newbtn.Click += new System.EventHandler(this.newbtn_Click);
             // 
             // ResumeCreate
             // 
@@ -675,7 +675,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGreen;
             this.ClientSize = new System.Drawing.Size(1221, 669);
-            this.Controls.Add(this.readJSON);
+            this.Controls.Add(this.newbtn);
             this.Controls.Add(this.rdJSON);
             this.Controls.Add(this.SYBox2);
             this.Controls.Add(this.lbl14);
@@ -752,7 +752,7 @@
         private System.Windows.Forms.Label lbl14;
         private System.Windows.Forms.ComboBox SYBox2;
         private System.Windows.Forms.RichTextBox rdJSON;
-        private System.Windows.Forms.Button readJSON;
+        private System.Windows.Forms.Button newbtn;
     }
 }
 
