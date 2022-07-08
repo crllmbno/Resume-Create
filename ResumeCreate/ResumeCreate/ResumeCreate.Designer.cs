@@ -61,7 +61,6 @@
             this.SYBox2 = new System.Windows.Forms.ComboBox();
             this.rdJSON = new System.Windows.Forms.RichTextBox();
             this.readJSON = new System.Windows.Forms.Button();
-            this.stPDF = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbl1
@@ -670,26 +669,12 @@
             this.readJSON.UseVisualStyleBackColor = true;
             this.readJSON.Click += new System.EventHandler(this.readJSON_Click);
             // 
-            // stPDF
-            // 
-            this.stPDF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.stPDF.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stPDF.ForeColor = System.Drawing.Color.White;
-            this.stPDF.Location = new System.Drawing.Point(793, 584);
-            this.stPDF.Name = "stPDF";
-            this.stPDF.Size = new System.Drawing.Size(116, 34);
-            this.stPDF.TabIndex = 18;
-            this.stPDF.Text = "Save to PDF";
-            this.stPDF.UseVisualStyleBackColor = true;
-            this.stPDF.Click += new System.EventHandler(this.stPDF_Click);
-            // 
             // ResumeCreate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGreen;
             this.ClientSize = new System.Drawing.Size(1221, 669);
-            this.Controls.Add(this.stPDF);
             this.Controls.Add(this.readJSON);
             this.Controls.Add(this.rdJSON);
             this.Controls.Add(this.SYBox2);
@@ -768,7 +753,6 @@
         private System.Windows.Forms.ComboBox SYBox2;
         private System.Windows.Forms.RichTextBox rdJSON;
         private System.Windows.Forms.Button readJSON;
-        private System.Windows.Forms.Button stPDF;
     }
 }
 

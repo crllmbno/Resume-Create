@@ -55,7 +55,6 @@ namespace ResumeCreate
             wrtJson.Hide();
             rdJSON.Hide();
             readJSON.Hide();
-            stPDF.Hide();
 
         }
 
@@ -91,7 +90,6 @@ namespace ResumeCreate
             btn1.Hide();
             wrtJson.Show();
             readJSON.Show();
-            stPDF.Show();
             
         }
 
@@ -111,10 +109,13 @@ namespace ResumeCreate
 
             };
 
+            
             string jsonToWrite = JsonConvert.SerializeObject(Data, Formatting.Indented);
             File.WriteAllText(Application.StartupPath + "\\JsonFiles\\" + LastNameBox.Text + "_" 
                 + FirstNameBox.Text + ".json", jsonToWrite);
+            GeneratePDF();
             MessageBox.Show("Saved");
+
 
             CPNoBox.Clear();
             TeleNoBox.Clear();
@@ -137,7 +138,7 @@ namespace ResumeCreate
             str.Close();
         }
 
-        private void stPDF_Click(object sender, EventArgs e)
+        private void GeneratePDF()
         {
             PdfDocument doc = new PdfDocument();
 
@@ -145,9 +146,11 @@ namespace ResumeCreate
 
             XGraphics gfx = XGraphics.FromPdfPage(page);
 
+            gfx.DrawString("Resume", new XFont("Rockwell", 40, XFontStyle.Bold), XBrushes.Black,
+                new XPoint(200, 70));
+
             XFont font = new XFont("Calibri", 20);
 
-            users.
 
             doc.Save(Application.StartupPath + "\\PDF\\" + LastNameBox.Text + "_" + FirstNameBox.Text + ".pdf");
         }
