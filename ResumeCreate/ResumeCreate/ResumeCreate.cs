@@ -49,7 +49,9 @@ namespace ResumeCreate
             UniBox.Hide();
             SYBox1.Hide();
             SYBox2.Hide();
-
+            wrtJson.Hide();
+            rdJSON.Hide();
+            readJSON.Hide();
 
         }
 
@@ -83,28 +85,52 @@ namespace ResumeCreate
             SYBox1.Show();
             SYBox2.Show();
             btn1.Hide();
+            wrtJson.Show();
+            readJSON.Show();
             
         }
 
         private void wrtJson_Click(object sender, EventArgs e)
         {
-            details Data = new details()
+            details Data = new details
             {
-                Name = FirstNameBox.Text + MIBox.Text + LastNameBox.Text,
+                Name = FirstNameBox.Text + " " + MIBox.Text + "." + " " + LastNameBox.Text,
                 Contactinfo = CPNoBox.Text + " or " + TeleNoBox.Text,
+                Email = emailAddBox.Text,
                 Summary = summaryBox.Text,
                 Experience = experienceBox.Text,
                 Skills = skillsBox.Text,
-                Education = courseBox.Text + "\r\n" + UniBox.Text + "\r\n" + SYBox1.Text + " to " + SYBox2,
+                Education = courseBox.Text,
+                University = UniBox.Text, 
+                DateGrad = SYBox1.Text + " to " + SYBox2.Text,
 
             };
 
-            string jsonToWrite = JsonConvert.SerializeObject(Data);
+            string jsonToWrite = JsonConvert.SerializeObject(Data, Formatting.Indented);
             File.WriteAllText(Application.StartupPath + "\\JsonFiles\\" + LastNameBox.Text + "_" 
                 + FirstNameBox.Text + ".json", jsonToWrite);
             MessageBox.Show("Saved");
+
+            CPNoBox.Clear();
+            TeleNoBox.Clear();
+            emailAddBox.Clear();
+            summaryBox.Clear();
+            experienceBox.Clear();
+            skillsBox.Clear();
+            courseBox.Clear();
+            UniBox.Clear();
+            SYBox1.Items.Clear();
+            SYBox2.Items.Clear();
         }
-        
+
+        private void readJSON_Click(object sender, EventArgs e)
+        {
+            rdJSON.Show();
+            StreamReader str = new StreamReader(Application.StartupPath + "\\JsonFiles\\" + LastNameBox.Text
+                + "_" + FirstNameBox.Text + ".json");
+            rdJSON.Text = str.ReadToEnd();
+            str.Close();
+        }
 
         public class details
         {
@@ -115,6 +141,8 @@ namespace ResumeCreate
             public string Experience { get; set; }
             public string Skills { get; set; }
             public string Education { get; set; }
+            public string University { get; set; }
+            public string DateGrad { get; set; }
 
         }
     }
